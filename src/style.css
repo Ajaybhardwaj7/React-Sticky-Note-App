@@ -1,0 +1,83 @@
+
+html, body , body > div, #main > div {
+	height: 100%;
+	font-family: Calibri
+}
+
+body {
+	background-color: orange;
+}
+body > h1 {
+	color : #4774d9;
+}
+#main {
+	color: white ;
+}
+.board{
+	clear: both;
+	height:100%;
+}
+.note {
+	background-color:yellow;
+	width: 200px;
+    height: 188px;
+    color: black;
+    margin-bottom: 10px;
+    float:left;
+    margin-left: 10px;
+    position:relative;
+    padding:15px;
+    position: relative;
+    border-radius:4px;	
+}
+.note > img {
+	opacity: 0
+}
+.note:hover > img{
+	opacity: 1;
+}
+.center {
+	text-align: center;
+}
+.right {
+	float:right;
+}
+.addIcon {
+	cursor: pointer
+}
+.notes-container{
+	overflow: hidden;
+	padding-top: 10px;
+}
+.img-delete , .img-edit , .img-clear {
+	position: absolute;
+	bottom: 5px;
+	cursor: pointer;
+}
+.img-delete{
+	background: url('/assets/icons/delete.png') no-repeat;
+	right: 0px;
+    bottom: 0;
+    top: 5px;
+}
+.img-edit{
+	background: url('/assets/icons/edit.png')  no-repeat;
+	right: 40px;
+}
+.img-clear{
+ 	background: url('/assets/icons/clear.png')  no-repeat;
+ 	right: 10px;
+}
+textarea  , .note-text{
+    height: 156px;
+    width: 178px;
+}
+.note-text {
+	border : 1px solid gray;
+	opacity : 0.5;
+	padding:8px;
+	background-color: #fde0f0;
+	border-radius:4px;	
+	color: #003b6f;
+
+}
